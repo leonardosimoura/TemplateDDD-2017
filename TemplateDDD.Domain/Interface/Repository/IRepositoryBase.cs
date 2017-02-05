@@ -7,7 +7,7 @@ using TemplateDDD.Domain.Interface.UnitOfWork;
 
 namespace TemplateDDD.Domain.Interface.Repository
 {
-    public interface IRepositoryBase<TModel> where TModel : class 
+    public interface IRepositoryBase<TModel> : IDisposable where TModel : class 
     {
      
         void Adicionar(ref TModel entidade);

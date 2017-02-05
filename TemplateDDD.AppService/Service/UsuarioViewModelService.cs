@@ -69,5 +69,10 @@ namespace TemplateDDD.AppService.Service
         {
             return _mapper.MapearParaViewModel(_service.SelecionarTodos());
         }
+
+        public void Dispose()
+        {
+            _service.Dispose();
+        }
     }
 }

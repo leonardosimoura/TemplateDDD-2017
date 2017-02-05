@@ -59,5 +59,10 @@ namespace TemplateDDD.Domain.Service
         {
             return _repository.SelecionarTodos();
         }
+
+        public void Dispose()
+        {
+            _repository.Dispose();
+        }
     }
 }

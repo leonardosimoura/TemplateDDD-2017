@@ -77,5 +77,10 @@ namespace TemplateDDD.Repository.EF.Repository
         {
             return _dbContext.Set<TModel>();
         }
+
+        public void Dispose()
+        {
+            //_dbContext.Dispose();
+        }
     }
 }

@@ -7,7 +7,7 @@ using TemplateDDD.Domain.Interface.UnitOfWork;
 
 namespace TemplateDDD.Domain.Interface.Service
 {
-    public interface IServiceBase<TModel> where TModel : class 
+    public interface IServiceBase<TModel> : IDisposable where TModel : class 
     {
         //IUnitOfWork Uow { get; set; }
         void Adicionar(ref TModel entidade);
